@@ -7,4 +7,5 @@ scraped_images/
 share/
 
 *.log
+*.csv
 
