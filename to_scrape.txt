@@ -10,4 +10,7 @@ python3 scrape_images.py -u 'https://www.reef2reef.com/threads/wwc-spring-lightn
 4. WWC 2020 Tax Craze Live Sale (406)
 python3 scrape_images.py -u 'https://www.reef2reef.com/threads/world-wide-corals-tax-craze-live-sale-refun-your-refund.689646/page-16' -p 'WWC' -i 'worldwidecorals.sirv.com/Tax_Craze_LS_2020'
 
+5. WWC 2019 Cyber Monday Live Sale (307)
+python3 scrape_images.py -u 'https://www.reef2reef.com/threads/world-wide-corals-cyber-monday-live-sale-2500-frags-in-18-hours-massive-discounts.664256/page-13' -p 'WWC' -i 'worldwidecorals.sirv.com/CyberMonday_2019'
+
 
