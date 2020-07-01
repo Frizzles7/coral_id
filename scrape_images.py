@@ -192,7 +192,7 @@ def main(url, poster, image_loc):
         # get url for the current page of the forum and scrape
         current_url = base_url + '/page-' + str(i)
         if is_url_valid(current_url):
-            image_links = get_all_images(url, poster, image_loc)
+            image_links = get_all_images(current_url, poster, image_loc)
             if image_links == []:
                 print('page ', i, ' has no image links')
             download_images(image_links)
