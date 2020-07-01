@@ -113,9 +113,11 @@ def download_images(image_links):
     """
 
     for i in image_links:
+        r = requests.get(i[1])        
         filename = os.path.join('./scraped_images/', 
-                                urlparse(i[1]).path.split('/')[-1])
-        urlretrieve(i[1], filename)
+            urlparse(i[1]).query.split('%2')[-1].split('&hash=')[0])
+        with open(filename, 'wb') as outfile:
+            outfile.write(r.content)
 
 
 def output_names_files(image_links):
@@ -190,7 +192,7 @@ def main(url, poster, image_loc):
         # get url for the current page of the forum and scrape
         current_url = base_url + '/page-' + str(i)
         if is_url_valid(current_url):
-            image_links = get_all_images(current_url)
+            image_links = get_all_images(url, poster, image_loc)
             if image_links == []:
                 print('page ', i, ' has no image links')
             download_images(image_links)
