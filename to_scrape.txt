@@ -1,0 +1,13 @@
+1. WWC 2019 Tax Craze Live Sale (363)
+python3 scrape_images.py -u 'https://www.reef2reef.com/threads/world-wide-corals-tax-craze-live-sale-2300-frags-discounted-beyond-belief.552524/page-24' -p 'WWC' -i 'worldwidecorals.sirv.com/Tax_Craze_2019'
+
+2. WWC 2020 Timesplitter Live Sale (646)
+python3 scrape_images.py -u 'https://www.reef2reef.com/threads/world-wide-corals-timesplitter-live-sale-3-000-frags-our-largest-ever.719326/page-15' -p 'WWC-BOT' -i 'worldwidecorals.sirv.com/TSLS_20'
+
+3. WWC 2020 Spring Lightning Sale (173)
+python3 scrape_images.py -u 'https://www.reef2reef.com/threads/wwc-spring-lightning-sale-800-frags-up-to-75-off.712595/page-13' -p 'WWC' -i 'worldwidecorals.sirv.com/Spring_Lightning_Sale_2020'
+
+4. WWC 2020 Tax Craze Live Sale (406)
+python3 scrape_images.py -u 'https://www.reef2reef.com/threads/world-wide-corals-tax-craze-live-sale-refun-your-refund.689646/page-16' -p 'WWC' -i 'worldwidecorals.sirv.com/Tax_Craze_LS_2020'
+
+
