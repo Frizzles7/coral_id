@@ -12,8 +12,19 @@ If you are wondering what a coral frag looks like, here is an example. This cora
 
 <img src="https://github.com/Frizzles7/coral_id/blob/master/TSR11-37-575.jpg" width="300"/>
 
-
-
 ### BTW: What is a Live Sale?
 
 If you are wondering what a Live Sale is, this is similar to an online auction, and it occurs on the forums of the Reef2Reef website. Pictures of coral frags (small pieces of coral cut off from the mother colony) are posted on the forums, and the first person to purchase the listed coral wins. Since these are live pieces of coral, each one is different. Usually, many good deals are provided, and rare corals are sometimes offered. These sales can last hours (or even an entire weekend). It is a fun way for people to buy corals for their reef tanks and to spend time with other reefers and vendors.
+
+### Scraping for Data
+
+To get the training data, I will need to scrape the images along with the names from the [Reef2Reef.com](www.Reef2Reef.com) website.  I wrote the script `scrape_images.py` to do this job.  For a given url, author of the post, and location of the images, I can pull down all of the images from that thread on the forums.  I save each of the images along with a file mapping the name of the saved image file and the name of the coral.
+
+I then searched for the appropriate live sale threads, as listed in `to_scrape.txt` and applied the script to each of the threads, building up a training set of images.
+
+Getting all the data for training will take a while...
+
+## Data Cleaning and Preparation
+
+...more to come...
+
