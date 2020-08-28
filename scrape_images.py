@@ -55,7 +55,7 @@ def is_url_valid(url):
     return is_valid
 
 
-def get_all_images(url, poster, image_loc):
+def get_all_images(url, poster, image_loc, do_verbose):
     """
     Returns all image urls from the given url.
     
@@ -66,7 +66,8 @@ def get_all_images(url, poster, image_loc):
             image_loc (string): A string containing the location of the images,
                 such as 'worldwidecorals.sirv.com/TSLS_20' from the data-url 
                 for the image
-        
+            do_verbose (boolean): A boolean, where True displays additional
+                debugging output        
         Returns:
             image_links (list): A list of [names, image urls] from the page
     """
@@ -81,17 +82,24 @@ def get_all_images(url, poster, image_loc):
     images=[]
     names=[]
     for tt in soup_div:
+        img_found = 0
         try:
             t1 = tt.find_all('img')
             for image in t1:
                 if image_loc in image['data-url']:
                     images.append('https://www.reef2reef.com' + image['src'])
-            t2 = tt.find_all('b')
-            for name in t2:
-                names.append(name.text)
+                    img_found = 1
+            if img_found == 1:
+                t2 = tt.find_all('b')
+                for name in t2:
+                    names.append(name.text)
         except:
             pass
     names_trimmed = names[0::6]
+    if do_verbose:
+        print('images: ', '\n', images)
+        print('names: ', '\n', names)
+        print('names_trimmed: ', '\n', names_trimmed)
     
     # if the lengths of the two lists are the same, zip together
     if len(names_trimmed) == len(images):
@@ -104,18 +112,23 @@ def get_all_images(url, poster, image_loc):
     return image_links
 
 
-def download_images(image_links):
+def download_images(image_links, do_verbose):
     """
     Downloads all images provided in the list of image names and urls.
     
         Parameters:
             image_links (list): A list of [names, image urls]
+            do_verbose (boolean): A boolean, where True displays additional
+                debugging output
     """
 
     for i in image_links:
         r = requests.get(i[1])        
         filename = os.path.join('./scraped_images/', 
-            urlparse(i[1]).query.split('%2')[-1].split('&hash=')[0])
+                                urlparse(i[1]).query.split('%2F')[-1].split('.jpg')[0]+'.jpg')
+        if do_verbose:
+            print('image_link: ', i)
+            print('filename: ', filename)
         with open(filename, 'wb') as outfile:
             outfile.write(r.content)
 
@@ -162,7 +175,7 @@ def get_num_pages(url):
     return num_pages
 
 
-def main(url, poster, image_loc):
+def main(url, poster, image_loc, do_verbose):
     """
     Loops through the pages in this thread of the forum to get all images.
     
@@ -174,17 +187,25 @@ def main(url, poster, image_loc):
             image_loc (string): A string containing the location of the
                 images, such as 'worldwidecorals.sirv.com/TSLS_20' from the
                 data-url for the image
+            do_verbose (boolean): A boolean, where True displays additional
+                debugging output
     """
     
     # find first page, last page, and base url
     if is_url_valid(url):
         last_page = get_num_pages(url)
+        if do_verbose:
+            print('last page: ', last_page)
         base_url, first_page  = url.split('/page-')
         first_page = int(first_page)
+        if do_verbose:
+            print('first page: ', first_page)
         
     # loop through pages from first to last, pausing periodically
     print('Beginning scrape at page ', first_page)
     for i in range(first_page, last_page+1):
+        if do_verbose:
+            print('i: ', i)
         # implement periodic pause
         if i % 20 == 0:
             print('pausing for 30 seconds at page ', i)
@@ -192,10 +213,10 @@ def main(url, poster, image_loc):
         # get url for the current page of the forum and scrape
         current_url = base_url + '/page-' + str(i)
         if is_url_valid(current_url):
-            image_links = get_all_images(current_url, poster, image_loc)
+            image_links = get_all_images(current_url, poster, image_loc, do_verbose)
             if image_links == []:
                 print('page ', i, ' has no image links')
-            download_images(image_links)
+            download_images(image_links, do_verbose)
             output_names_files(image_links)
         else:
             print('WARNING: page ', i, ' has invalid url')
@@ -225,18 +246,25 @@ if __name__ == "__main__":
         dest='do_quit', action='store_true',
         help='Display informational messages then quit.',
         default=False)
+    parser.add_argument(
+        '-v', '--verbose',
+        dest='do_verbose', action='store_true',
+        help='Display additional debugging output.',
+        default=False)
 
     args = parser.parse_args()
     do_quit = args.do_quit
-    if do_quit:
+    do_verbose = args.do_verbose
+    if do_quit or do_verbose:
         print('Input Arguments:')
-        print('  do_quit        :', do_quit)        
-        print('  url            :', args.url)
-        print('  poster         :', args.poster)
-        print('  image_loc      :', args.image_loc)
+        print('  do_quit        : ', do_quit)        
+        print('  url            : ', args.url)
+        print('  poster         : ', args.poster)
+        print('  image_loc      : ', args.image_loc)
+        print('  do_verbose     : ', args.do_verbose)
 
     if do_quit:
         raise SystemExit('\n --- Requested quit --- \n')
 
-    main(args.url, args.poster, args.image_loc)
+    main(args.url, args.poster, args.image_loc, do_verbose)
 
