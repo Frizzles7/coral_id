@@ -1,0 +1,1 @@
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/wwc-spring-lightning-sale-800-frags-up-to-75-off.712595/page-13' -p 'WWC' -i 'worldwidecorals.sirv.com/Spring_Lightning_Sale_2020' > 20200827_spring_lightning_2020.log 2>&1
