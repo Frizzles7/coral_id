@@ -19,49 +19,69 @@ python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/get-ready-to-l
 7. WWC 2022 Tax Craze Live Sale (338) - DONE
 python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/its-time-for-wwc-first-live-sale-of-the-year-join-the-tax-craze-live-sale-and-enjoy-up-to-80-off.894332/page-15' -p 'WWC-BOT' -i 'worldwidecorals.sirv.com/Tax_Craze_2022'
 
-8. WWC 2021 14th Anniversary Live Sale (464) - In progress
+8. WWC 2021 14th Anniversary Live Sale (464) - DONE
 python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/wwcs-14th-anniversary-sale-is-here-3600-frags-at-up-to-85-off.845896/page-11' -p 'WWC' -i 'worldwidecorals.sirv.com/14TH_ANN_LS'
 
-9. WWC 2021 Cyber Monday Live Sale (150)
+9. WWC 2021 Cyber Monday Live Sale (150) - DONE
 python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/wwc-cyber-monday-live-sale-up-to-85-off.874299/page-10' -p 'WWC' -i 'worldwidecorals.sirv.com/Cyber_Monday_2021'
 
-10. WWC 2022 Blizzard Flash Sale (68)
+10. WWC 2022 Blizzard Flash Sale (68) - DONE
 python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/its-time-for-the-wwc-blizzard-flash-sale-get-up-to-85-off-corals.886313/page-5' -p 'WWC' -i 'worldwidecorals.sirv.com/Blizzard_Flash_Sale'
 
-11. WWC 2021 Fragtoberfest Live Sale (354)
+11. WWC 2021 Fragtoberfest Live Sale (354) - DONE
 python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/wwc-fragtoberfest-live-sale-2021-3700-frag-at-up-to-80-off.862107/page-9' -p 'WWC' -i 'worldwidecorals.sirv.com/Fragtoberfest_2021'
 
-12. WWC 2018 Cyber Monday Live Sale (226)
-python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/world-wide-corals-cyber-monday-live-sale-2000-frags-in-14-hours-whoa.499584/page-14' -p 'WWC' -i 'worldwidecorals.sirv.com/CM-LIVESALE-2018'
+12. WWC 2018 Cyber Monday Live Sale (226) - DONE
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/world-wide-corals-cyber-monday-live-sale-2000-frags-in-14-hours-whoa.499584/page-14' -p 'WWC' -i 'worldwidecorals-cdn.sirv.com/CM-LIVESALE-2018'
 
-13. WWC 2021 Endless Summer Flash Sale (61)
+13. WWC 2021 Endless Summer Flash Sale (61) - DONE
 python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/wwc-endless-summer-flash-sale-1200-frags-at-up-to-85-off.854435/page-7' -p 'WWC' -i 'worldwidecorals.sirv.com/End_Summer_Flash_21'
 
-14. WWC 2021 Coral Maynia Live Sale (461)
+14. WWC 2021 Coral Maynia Live Sale (461) - DONE
 python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/wwcs-coral-maynia-live-sale-3600-frags-at-up-to-80-off.829128/page-12' -p 'WWC' -i 'worldwidecorals.sirv.com/Coral_Maynia_2021'
 
-15. 
+15. WWC 2021 Fragtoberfest Live Sale Part 2 (354) - DONE
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/wwc-fragtoberfest-live-sale-2021-3700-frag-at-up-to-80-off.862107/page-9' -p 'WWC-BOT' -i 'worldwidecorals.sirv.com/Fragtoberfest_2021'
 
+16. WWC 2021 Tax Craze Live Sale (879) - In progress
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/world-wide-corals-tax-craze-live-sale-up-to-80-off.804155/page-18' -p 'WWC' -i 'worldwidecorals.sirv.com/Tax_Craze_2021'
 
-16. 
+17. WWC 2021 Tax Craze Live Sale Part 2 (879) - 
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/world-wide-corals-tax-craze-live-sale-up-to-80-off.804155/page-18' -p 'WWC-BOT' -i 'worldwidecorals.sirv.com/Tax_Craze_2021'
 
+18. WWC 2021 Spring Flash Sale (104) - 
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/wwcs-spring-flash-sale-this-friday-night-4-16-over-1000-frags-at-up-to-85-off.821630/page-8' -p 'WWC' -i 'worldwidecorals.sirv.com/Spring_Flash_21'
 
-17.
+19. WWC 2021 Spring Flash Sale Part 2 (104) - 
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/wwcs-spring-flash-sale-this-friday-night-4-16-over-1000-frags-at-up-to-85-off.821630/page-8' -p 'WWC-BOT' -i 'worldwidecorals.sirv.com/Spring_Flash_21'
 
+20. WWC 2020 Fall Flash Sale (90) - 
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/world-wide-corals-fall-flash-sale-fall-in-love-with-these-discounts.773199/page-9' -p 'WWC' -i 'worldwidecorals.sirv.com/Fall_Flash_2020'
 
-18. 
+21. WWC 2020 Fall Flash Sale Part 2 (90) - 
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/world-wide-corals-fall-flash-sale-fall-in-love-with-these-discounts.773199/page-9' -p 'WWC-BOT' -i 'worldwidecorals.sirv.com/Fall_Flash_2020'
 
+22. WWC 2020 Fragtoberfest Live Sale (468) - 
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/wwcs-fragtoberfest-live-sale-2020-%C3%9Cber-koralles-and-%C3%9Cber-diskonts.762552/page-11' -p 'WWC' -i 'worldwidecorals.sirv.com/FFLS2020'
 
-19. 
+23. WWC 2020 Fragtoberfest Live Sale Part 2 (468) - 
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/wwcs-fragtoberfest-live-sale-2020-%C3%9Cber-koralles-and-%C3%9Cber-diskonts.762552/page-11' -p 'WWC-BOT' -i 'worldwidecorals.sirv.com/FFLS2020'
 
+24. WWC 2020 13th Anniversary Live Sale (580) - 
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/world-wide-corals-13th-anniversary-live-sale-celebrate-with-us.740400/page-18' -p 'WWC' -i 'worldwidecorals.sirv.com/13ANNLS'
 
+25. WWC 2020 13th Anniversary Live Sale Part 2 (580) - 
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/world-wide-corals-13th-anniversary-live-sale-celebrate-with-us.740400/page-18' -p 'WWC-BOT' -i 'worldwidecorals.sirv.com/13ANNLS'
 
+26. WWC 2021 14th Anniversary Live Sale Part 2 (464) - 
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/wwcs-14th-anniversary-sale-is-here-3600-frags-at-up-to-85-off.845896/page-11' -p 'WWC-BOT' -i 'worldwidecorals.sirv.com/14TH_ANN_LS'
 
-TO DO:
-https://www.reef2reef.com/threads/world-wide-corals-tax-craze-live-sale-up-to-80-off.804155/
-https://www.reef2reef.com/threads/wwcs-spring-flash-sale-this-friday-night-4-16-over-1000-frags-at-up-to-85-off.821630/
-https://www.reef2reef.com/threads/world-wide-corals-fall-flash-sale-fall-in-love-with-these-discounts.773199/
-https://www.reef2reef.com/threads/wwcs-fragtoberfest-live-sale-2020-%C3%9Cber-koralles-and-%C3%9Cber-diskonts.762552/
-https://www.reef2reef.com/threads/world-wide-corals-13th-anniversary-live-sale-celebrate-with-us.740400/
+27. WWC 2021 Coral Maynia Live Sale Part 2 (461) - 
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/wwcs-coral-maynia-live-sale-3600-frags-at-up-to-80-off.829128/page-12' -p 'WWC-BOT' -i 'worldwidecorals.sirv.com/Coral_Maynia_2021'
 
+28. WWC 2022 Blizzard Flash Sale Part 2 (68) - 
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/its-time-for-the-wwc-blizzard-flash-sale-get-up-to-85-off-corals.886313/page-5' -p 'WWC-BOT' -i 'worldwidecorals.sirv.com/Blizzard_Flash_Sale'
+
+29. WWC 2022 Coral Maynia Live Sale Part 2 (217) - 
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/get-ready-to-lose-your-mind-with-wwcs-coral-maynia-live-sale-3600-corals-at-up-to-80-off.911072/page-7' -p 'WWC-BOT' -i 'worldwidecorals.sirv.com/Coral_Maynia_2022'
 
