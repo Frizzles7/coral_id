@@ -3,7 +3,7 @@ bin/
 lib/
 lib64
 pyvenv.cfg
-scraped_images/
+scraped_images*/
 share/
 
 *.log

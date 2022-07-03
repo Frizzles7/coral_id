@@ -22,7 +22,13 @@ To get the training data, I will need to scrape the images along with the names 
 
 I then searched for the appropriate live sale threads, as listed in `to_scrape.txt` and applied the script to each of the threads, building up a training set of images.
 
-Getting all the data for training will take a while...
+Before scraping the data, ensure that the folder `scraped_images` exists.
+
+To run the scraping on a specific thread, specify the url, poster, and image location at the command line. The verbose tag is also helpful for logging. Below is an example to perform the scraping and log the results:
+
+```
+python3 scrape_images.py -v -u 'https://www.reef2reef.com/threads/world-wide-corals-tax-craze-live-sale-2300-frags-discounted-beyond-belief.552524/page-24' -p 'WWC' -i 'worldwidecorals.sirv.com/Tax_Craze_2019' > 20220626_tax_craze_2019.log 2>&1
+```
 
 ## Data Cleaning and Preparation
 
