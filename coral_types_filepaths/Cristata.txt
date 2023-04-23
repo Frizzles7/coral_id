@@ -1,0 +1,16 @@
+scraped_images_2/R32-19-192t.jpg
+scraped_images_2/R32-11-562t.jpg
+scraped_images_2/R32-30-108t.jpg
+scraped_images_2/R32-08-456t.jpg
+scraped_images_2/R32-29-996t.jpg
+scraped_images_2/R32-07-968t.jpg
+scraped_images_2/R32-24-141t.jpg
+scraped_images_4/R10A-04-919t.jpg
+scraped_images_4/R10A-05-090t.jpg
+scraped_images_4/R10A-03-364t.jpg
+scraped_images_4/R10A-09-982t.jpg
+scraped_images_4/R10A-06-010t.jpg
+scraped_images_4/R10A-02-494t.jpg
+scraped_images_4/R10A-07-533t.jpg
+scraped_images_4/R10A-01-949t.jpg
+scraped_images_4/R10A-08-674t.jpg
